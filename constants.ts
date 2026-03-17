@@ -3,7 +3,7 @@ import { Horse, SoldHorse } from './types';
 export const HORSES: Horse[] = [
   {
     id: 1,
-    name: "Gildra från Lendelunden",
+    name: "Glimra från Lendelunden",
     birthYear: 2020,
     color: "Islandshäst", 
     gender: "Sto",
@@ -96,6 +96,7 @@ export const SOLD_HORSES: SoldHorse[] = [
   { name: "Glimra från Ekelunda gård" },
   { name: "Ragnhild från Ekelunda gård" },
   { name: "Rut från Ekelunda gård" }
+  { name: "Gildra från Lendelunden" }
 ];
 
 export const CONTACT_EMAIL = "info@ekelunda.se";

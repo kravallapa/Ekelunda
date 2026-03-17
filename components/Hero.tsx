@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ onReadMore }) => {
              1. Lägg bildfilen i projektmappen (t.ex. hero.jpg)
              2. Ändra src nedan till: src="/hero.jpg"
           */
-          src="//images/hero.jpg" 
+          src="/images/hero.jpg" 
           alt="Ekelunda Gård Landscape" 
           className="w-full h-full object-cover opacity-70"
         />

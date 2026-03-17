@@ -125,7 +125,7 @@ const App: React.FC = () => {
                    1. Spara din bild på fölet som "foal.jpg" i projektmappen.
                    2. Koden nedan hämtar den bilden.
                 */
-                src="foal.jpg" 
+                src="/images/foal.jpg" 
                 alt="Framtidens stjärna - Föl på Ekelunda Gård" 
                 className="rounded-lg shadow-xl w-full aspect-[3/2] object-cover"
               />

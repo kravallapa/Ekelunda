@@ -95,7 +95,7 @@ export const SOLD_HORSES: SoldHorse[] = [
   { name: "Freja från Dalsgård" },
   { name: "Glimra från Ekelunda gård" },
   { name: "Ragnhild från Ekelunda gård" },
-  { name: "Rut från Ekelunda gård" }
+  { name: "Rut från Ekelunda gård" },
   { name: "Gildra från Lendelunden" }
 ];
 

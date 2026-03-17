@@ -127,7 +127,7 @@ const App: React.FC = () => {
                 */
                 src="/images/foal.jpg" 
                 alt="Framtidens stjärna - Föl på Ekelunda Gård" 
-                className="rounded-lg shadow-xl w-full aspect-[3/2] object-cover"
+                className="rounded-lg shadow-xl w-full aspect-[3/2] object-cover object-top"
               />
             </div>
             <div className="md:w-1/2">

@@ -10,7 +10,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Sörli från Skáneyland",
     dam: "Gata frá Kvistum",
-    imageUrl: "images/glimra.jpg"
+    imageUrl: "/images/glimra.jpg"
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Stormur frá Herridarholi",
     dam: "Milly frá Feti",
-    imageUrl: "images/melkorka.jpg"
+    imageUrl: "/images/melkorka.jpg"
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Blær frá Miðsitju",
     dam: "Gyðja frá Glúmsstöðum 2",
-    imageUrl: "images/gloa.jpg"
+    imageUrl: "/images/gloa.jpg"
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Prins frá Úlfjotsvatni",
     dam: "Vera frá Hólavatni",
-    imageUrl: "images/roskva.jpg"
+    imageUrl: "/images/roskva.jpg"
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Oðinn vom Habichtswald",
     dam: "Röskva fra Hólavatni",
-    imageUrl: "images/r.jpg"
+    imageUrl: "/images/r.jpg"
   },
   {
     id: 6,
@@ -65,7 +65,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Sörli från Skáneyland",
     dam: "Olympia fra Stav",
-    imageUrl: "images/otto.jpg"
+    imageUrl: "/images/otto.jpg"
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Grimur frá Efsta-Seli",
     dam: "Melkorka fra Melaberg",
-    imageUrl: "images/melkior.png"
+    imageUrl: "/images/melkior.png"
   },
   {
     id: 8,
@@ -87,7 +87,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Oðinn vom Habichtswald",
     dam: "Röskva fra Hólavatni",
-    imageUrl: "images/rakel.jpg"
+    imageUrl: "/images/rakel.jpg"
   }
 ];
 

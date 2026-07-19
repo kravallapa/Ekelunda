@@ -1,12 +1,7 @@
 import React, { useEffect } from 'react';
 import { RETRIEVER_BOOKING_EMAIL, CONTACT_PHONE, ADDRESS } from '../constants';
 
-const AREAS = [
-  { name: 'Stora dammen', description: 'Större damm med öar och skogskant, mitt på marken.' },
-  { name: 'Fiskedammen', description: 'Mindre damm i markens västra del.' },
-  { name: 'Vallen', description: 'Öppen gräsvall i öster.' },
-  { name: 'Viltvattnet', description: 'Viltvatten i öppen mark, öster om bostadshuset.' },
-];
+const AREAS = ['Stora dammen', 'Fiskedammen', 'Vallen', 'Viltvattnet'];
 
 const CHECKLIST = [
   'Önskat datum',
@@ -54,12 +49,11 @@ export const RetrieverPage: React.FC = () => {
             className="rounded-lg shadow-xl w-full mb-10"
           />
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex flex-wrap justify-center gap-4">
             {AREAS.map(area => (
-              <div key={area.name} className="bg-earth-50 border border-earth-200 rounded-lg p-6">
-                <h3 className="font-serif font-bold text-earth-900 text-lg mb-2">{area.name}</h3>
-                <p className="text-earth-600 text-sm leading-relaxed">{area.description}</p>
-              </div>
+              <span key={area} className="bg-earth-50 text-earth-800 font-serif font-bold px-6 py-3 rounded-full border border-earth-200">
+                {area}
+              </span>
             ))}
           </div>
         </div>

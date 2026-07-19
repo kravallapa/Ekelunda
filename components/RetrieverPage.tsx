@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { RETRIEVER_BOOKING_EMAIL, CONTACT_PHONE, ADDRESS } from '../constants';
 
-const AREAS = ['Stora dammen', 'Fiskedammen', 'Vallen', 'Viltvattnet'];
-
 const CHECKLIST = [
   'Önskat datum',
   '3 timmar eller heldag',
@@ -46,16 +44,8 @@ export const RetrieverPage: React.FC = () => {
           <img
             src="/images/marken.jpg"
             alt="Karta över marken på Ekelunda Gård med Stora dammen, Fiskedammen, Vallen, Viltvattnet och parkering markerade"
-            className="rounded-lg shadow-xl w-full mb-10"
+            className="rounded-lg shadow-xl w-full"
           />
-
-          <div className="flex flex-wrap justify-center gap-4">
-            {AREAS.map(area => (
-              <span key={area} className="bg-earth-50 text-earth-800 font-serif font-bold px-6 py-3 rounded-full border border-earth-200">
-                {area}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 

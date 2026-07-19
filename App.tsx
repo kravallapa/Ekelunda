@@ -3,14 +3,21 @@ import { Hero } from './components/Hero';
 import { HorseCard } from './components/HorseCard';
 import { StableAssistant } from './components/StableAssistant';
 import { InstagramFeed } from './components/InstagramFeed';
+import { RetrieverPage } from './components/RetrieverPage';
 import { HORSES, SOLD_HORSES, ADDRESS, CONTACT_EMAIL, CONTACT_PHONE } from './constants';
 import { PageView } from './types';
 
 const App: React.FC = () => {
   const [activePage, setActivePage] = useState<PageView>(PageView.HOME);
+  const isRetrieverPage = window.location.pathname.replace(/\/$/, '') === '/retrievertraning';
 
   // Helper to scroll to section
   const scrollToSection = (id: string) => {
+    // On a subpage the section doesn't exist — go to the home page anchor instead
+    if (isRetrieverPage) {
+      window.location.href = `/#${id}`;
+      return;
+    }
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -18,7 +25,7 @@ const App: React.FC = () => {
   };
 
   const NavLink = ({ page, label, sectionId }: { page?: PageView, label: string, sectionId: string }) => (
-    <button 
+    <button
       onClick={() => scrollToSection(sectionId)}
       className="text-earth-800 hover:text-moss-700 font-medium tracking-wide transition-colors px-3 py-2"
     >
@@ -33,9 +40,15 @@ const App: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <div 
-              className="flex items-center cursor-pointer" 
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            <div
+              className="flex items-center cursor-pointer"
+              onClick={() => {
+                if (isRetrieverPage) {
+                  window.location.href = '/';
+                } else {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+              }}
             >
               <div className="w-10 h-10 bg-moss-800 rounded-full flex items-center justify-center mr-3 text-white font-serif text-xl font-bold">
                 E
@@ -46,14 +59,21 @@ const App: React.FC = () => {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex space-x-8 items-center">
               <NavLink label="Våra Hästar" sectionId="horses" />
               <NavLink label="Avel" sectionId="breeding" />
+              <a
+                href="/retrievertraning"
+                className="text-earth-800 hover:text-moss-700 font-medium tracking-wide transition-colors px-3 py-2"
+              >
+                Retrieverträning
+              </a>
               <NavLink label="Kontakt" sectionId="contact" />
             </nav>
 
             {/* Mobile Menu Button (simplified for this demo) */}
-            <div className="md:hidden text-earth-800">
+            <div className="md:hidden text-earth-800 flex items-center space-x-4">
+               <a href="/retrievertraning" className="font-medium">Retrieverträning</a>
                <button onClick={() => scrollToSection('contact')}>Kontakt</button>
             </div>
           </div>
@@ -62,7 +82,8 @@ const App: React.FC = () => {
 
       {/* Main Content */}
       <main className="flex-grow pt-20">
-        
+        {isRetrieverPage ? <RetrieverPage /> : <>
+
         {/* Hero Section */}
         <Hero onReadMore={() => scrollToSection('horses')} />
 
@@ -210,6 +231,7 @@ const App: React.FC = () => {
             </div>
           </div>
         </section>
+        </>}
       </main>
 
       {/* Footer */}

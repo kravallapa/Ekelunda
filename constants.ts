@@ -90,5 +90,6 @@ export const SOLD_HORSES: SoldHorse[] = [
 ];
 
 export const CONTACT_EMAIL = "info@ekelunda.se";
+export const RETRIEVER_BOOKING_EMAIL = "hanna@kravallapa.se";
 export const CONTACT_PHONE = "0706-971641";
 export const ADDRESS = "Södra Hultarp 527, 243 97 Hallaröd";

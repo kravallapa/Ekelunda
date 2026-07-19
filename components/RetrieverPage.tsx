@@ -96,6 +96,7 @@ export const RetrieverPage: React.FC = () => {
               'Du bokar en specifik del av marken. Vilka delar som är tillgängliga beror på var hästarna går.',
               'Parkering sker på anvisad plats — markerad som "Parkering" på kartan.',
               'Plocka upp efter din hund och ta med ditt eget skräp hem.',
+              'Visa hänsyn för boende och grannar.',
             ].map((item, i) => (
               <li key={i} className="flex items-start text-earth-800">
                 <svg className="w-5 h-5 text-moss-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

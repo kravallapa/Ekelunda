@@ -65,7 +65,7 @@ export const HORSES: Horse[] = [
     description: "",
     sire: "Grimur frá Efsta-Seli",
     dam: "Melkorka fra Melaberg",
-    imageUrl: "/images/melkior.png"
+    imageUrl: "/images/melkior.jpg"
   },
   {
     id: 8,

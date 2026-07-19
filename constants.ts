@@ -24,17 +24,6 @@ export const HORSES: Horse[] = [
     imageUrl: "/images/melkorka.jpg"
   },
   {
-    id: 3,
-    name: "Glóa fra Gröf",
-    birthYear: 2013,
-    color: "Skimmel",
-    gender: "Sto",
-    description: "",
-    sire: "Blær frá Miðsitju",
-    dam: "Gyðja frá Glúmsstöðum 2",
-    imageUrl: "/images/gloa.jpg"
-  },
-  {
     id: 4,
     name: "Röskva fra Holavatni",
     birthYear: 2004,
@@ -96,7 +85,8 @@ export const SOLD_HORSES: SoldHorse[] = [
   { name: "Glimra från Ekelunda gård" },
   { name: "Ragnhild från Ekelunda gård" },
   { name: "Rut från Ekelunda gård" },
-  { name: "Gildra från Lendelunden" }
+  { name: "Gildra från Lendelunden" },
+  { name: "Glóa fra Gröf" }
 ];
 
 export const CONTACT_EMAIL = "info@ekelunda.se";

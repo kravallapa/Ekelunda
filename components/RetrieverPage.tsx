@@ -83,6 +83,13 @@ export const RetrieverPage: React.FC = () => {
           <p className="text-center text-earth-700 mt-8">
             Priset gäller per person — det går bra att ta med flera hundar.
           </p>
+
+          <div className="bg-white rounded-lg shadow-md border border-earth-100 p-8 text-center mt-8">
+            <h3 className="font-serif font-bold text-earth-900 text-xl mb-2">Gruppträning, kurs eller jaktprov?</h3>
+            <p className="text-earth-600">
+              Det går även att boka marken för gruppträning, kurser och jaktprov — hör av dig för offert.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -98,6 +105,7 @@ export const RetrieverPage: React.FC = () => {
               'Skott är tillåtet — med sunt förnuft.',
               'Du bokar en specifik del av marken. Vilka delar som är tillgängliga beror på var hästarna går.',
               'Parkering sker på anvisad plats — markerad som "Parkering" på kartan.',
+              'Plocka upp efter din hund och ta med ditt eget skräp hem.',
             ].map((item, i) => (
               <li key={i} className="flex items-start text-earth-800">
                 <svg className="w-5 h-5 text-moss-600 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

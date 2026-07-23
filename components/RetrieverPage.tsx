@@ -134,6 +134,10 @@ export const RetrieverPage: React.FC = () => {
               Mejla {RETRIEVER_BOOKING_EMAIL}
             </a>
           </div>
+
+          <p className="text-moss-100 mt-10">
+            Betalning sker via Swish till <span className="font-semibold text-white">123-434 42 48</span>.
+          </p>
         </div>
       </section>
 

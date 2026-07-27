@@ -64,7 +64,7 @@ export const RetrieverPage: React.FC = () => {
               <p className="text-earth-600">per person</p>
             </div>
             <div className="bg-white rounded-lg shadow-md border border-earth-100 p-8 text-center">
-              <h3 className="font-serif font-bold text-earth-900 text-xl mb-2">Heldag</h3>
+              <h3 className="font-serif font-bold text-earth-900 text-xl mb-2">Heldag (6 timmar)</h3>
               <p className="text-4xl font-serif font-bold text-moss-700 mb-2">500 kr</p>
               <p className="text-earth-600">per person</p>
             </div>
